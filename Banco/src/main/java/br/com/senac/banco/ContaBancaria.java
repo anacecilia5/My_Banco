@@ -17,6 +17,22 @@ public ContaBancaria(String titular) {
   this.saldo = 0.00;
   
 }
+
+
+public  String getTitular(){
+    return this.titular;
+}
+
+public double getSaldo(){
+   return this.saldo;
+}
+
+       
+public void setTitular(String titular){
+   this.titular = titular;
+}
+
+
 public void depositar(double valor){
     if(valor > 0){
     this.saldo = this.saldo + valor;
@@ -25,6 +41,8 @@ public void depositar(double valor){
     }
     
 }
+
+
 public void sacar(double valor){
     if(valor > 0 && valor <= this.saldo){
    this.saldo = this.saldo - valor; 
@@ -32,6 +50,8 @@ public void sacar(double valor){
     System.out.println("Saque não permitido!!!!");
     }
 }
+
+
 
 public void extratoBancario(){
    System.out.println("Saldo: " + this.saldo);
