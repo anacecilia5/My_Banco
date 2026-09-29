@@ -1,2 +1,4 @@
 br\com\senac\banco\Banco.class
+br\com\senac\banco\ContaPF.class
+br\com\senac\banco\ContaPJ.class
 br\com\senac\banco\ContaBancaria.class
